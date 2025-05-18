@@ -1,4 +1,4 @@
-# Clash for Mac - 5月12日20.4M/S|免费V2ray/Shadowrocket/SSR/Clash订阅节点分享  更新时间 2025-05-12 10:26:37
+# Clash for Mac - 5月18日21.4M/S|免费V2ray/Shadowrocket/Clash/SSR订阅节点分享  更新时间 2025-05-18 10:29:51
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://clashformac.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://clashformac.github.io/uploads/2025/05/0-20250512.yaml
-- https://clashformac.github.io/uploads/2025/05/1-20250512.yaml
-- https://clashformac.github.io/uploads/2025/05/2-20250512.yaml
-- https://clashformac.github.io/uploads/2025/05/3-20250512.yaml
-- https://clashformac.github.io/uploads/2025/05/4-20250512.yaml
+- https://clashformac.github.io/uploads/2025/05/0-20250518.yaml
+- https://clashformac.github.io/uploads/2025/05/1-20250518.yaml
+- https://clashformac.github.io/uploads/2025/05/2-20250518.yaml
+- https://clashformac.github.io/uploads/2025/05/3-20250518.yaml
+- https://clashformac.github.io/uploads/2025/05/4-20250518.yaml
 
 ### V2ray订阅链接
 
-- https://clashformac.github.io/uploads/2025/05/0-20250512.txt
-- https://clashformac.github.io/uploads/2025/05/1-20250512.txt
-- https://clashformac.github.io/uploads/2025/05/2-20250512.txt
-- https://clashformac.github.io/uploads/2025/05/3-20250512.txt
-- https://clashformac.github.io/uploads/2025/05/4-20250512.txt
+- https://clashformac.github.io/uploads/2025/05/0-20250518.txt
+- https://clashformac.github.io/uploads/2025/05/1-20250518.txt
+- https://clashformac.github.io/uploads/2025/05/2-20250518.txt
+- https://clashformac.github.io/uploads/2025/05/3-20250518.txt
+- https://clashformac.github.io/uploads/2025/05/4-20250518.txt
 
 ### Sing-box订阅链接
 
-- https://clashformac.github.io/uploads/2025/05/20250512.json
+- https://clashformac.github.io/uploads/2025/05/20250518.json
 
 ## 更多clash节点订阅 ：
 

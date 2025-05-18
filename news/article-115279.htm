@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://clashformac.github.io/news/article-115279.htm" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>探秘Shadowrocket自动续费机制：一键续期背后的逻辑与风险</title>
+        <meta name="description" content="在现代数字生活的洪流中，VPN早已不仅是极客的专属工具，而是千千万万普通用户跨越网络边界、守护个人隐私的重要“通行证”。其中，Shadowrocket凭借强大的协议支持、高度自定义的规则设置和简洁高效" />
+        <link rel="icon" href="/assets/website/img/v2rayc/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="Clash for Mac 订阅教程网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://clashformac.github.io/news/article-115279.htm" />
+    <meta property="og:site_name" content="Clash for Mac 订阅教程网" />
+    <meta property="og:title" content="探秘Shadowrocket自动续费机制：一键续期背后的逻辑与风险" />
+    <meta property="og:image" content="https://clashformac.github.io/uploads/20241122/e3758398715faa26534341c4d2cd7ba1.webp" />
+        <meta property="og:release_date" content="2025-05-15T08:28:33" />
+    <meta property="og:updated_time" content="2025-05-15T08:28:33" />
+        <meta property="og:description" content="在现代数字生活的洪流中，VPN早已不仅是极客的专属工具，而是千千万万普通用户跨越网络边界、守护个人隐私的重要“通行证”。其中，Shadowrocket凭借强大的协议支持、高度自定义的规则设置和简洁高效" />
+    
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="探秘Shadowrocket自动续费机制：一键续期背后的逻辑与风险">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="/assets/website/js/frontend/v2rayc/aos/aos.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="/assets/website/css/v2rayc/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C9TKXBNNCJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C9TKXBNNCJ');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages">
+        <div class="container d-flex align-items-center">
+            <a href="/">
+                            <span class="logo me-auto">Clash for Mac</span>
+                        </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                                        <li><a class="nav-link" href="/">首页</a></li>
+                                        <li><a class="nav-link" href="/paid-subscribe/">推荐机场</a></li>
+                                        <li><a class="nav-link" href="/news/">新闻资讯</a></li>
+                                        <li><a class="nav-link" href="/client.htm">客户端</a></li>
+                                    </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/news/">新闻资讯</a></li>
+                    <li>正文</li>
+                </ol>
+                <h1>探秘Shadowrocket自动续费机制：一键续期背后的逻辑与风险</h1>
+            </div>
+        </section><!-- End Breadcrumbs -->
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="37" data-end="165">在现代数字生活的洪流中，VPN早已不仅是极客的专属工具，而是千千万万普通用户跨越网络边界、守护个人隐私的重要“通行证”。其中，<strong data-start="100" data-end="116">Shadowrocket</strong>凭借强大的协议支持、高度自定义的规则设置和简洁高效的使用体验，成为iOS端VPN客户端中的佼佼者。</p>
+<p data-start="167" data-end="278">但很多用户在享受它强大功能的同时，却忽略了一个看似简单却极为关键的功能：<strong data-start="203" data-end="223">自动续费（Auto-Renew）</strong>。这项功能看似只是付款机制中的一个小开关，实则直接关乎服务不中断的连续性、个人财务的掌控，乃至账户安全的保障。</p>
+<p data-start="280" data-end="366">本文将对Shadowrocket的自动续费功能进行全景式解析，从其启用机制、操作方法、应用逻辑、隐藏风险到常见误区一一剖析，力求为每一位用户提供真正有用、可操作的实战指导。</p>
+<hr data-start="368" data-end="371">
+<h2 data-start="373" data-end="403">一、Shadowrocket：不仅仅是一个VPN客户端</h2>
+<h3 data-start="405" data-end="418">它究竟是做什么的？</h3>
+<p data-start="420" data-end="561">Shadowrocket并非传统意义上的VPN工具，而是一个代理客户端，支持多种代理协议，包括Shadowsocks、V2Ray、Trojan、HTTP、HTTPS、Socks5等。它的核心在于“规则驱动路由”，用户可以自定义网络访问策略，实现精准分流，避免全局代理造成的速度损失。</p>
+<ul data-start="563" data-end="695">
+<li data-start="563" data-end="596">
+<p data-start="565" data-end="596"><strong data-start="565" data-end="573">使用对象</strong>：主要面向iOS用户（iPhone/iPad）</p>
+</li>
+<li data-start="597" data-end="695">
+<p data-start="599" data-end="608"><strong data-start="599" data-end="607">功能特色</strong>：</p>
+<ul data-start="611" data-end="695">
+<li data-start="611" data-end="643">
+<p data-start="613" data-end="643">规则分流（按域名、IP、GeoIP、User-Agent等）</p>
+</li>
+<li data-start="646" data-end="655">
+<p data-start="648" data-end="655">自定义配置导入</p>
+</li>
+<li data-start="658" data-end="667">
+<p data-start="660" data-end="667">多节点自动切换</p>
+</li>
+<li data-start="670" data-end="695">
+<p data-start="672" data-end="695">与Apple系统深度集成，可配合VPN模式运行</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote data-start="697" data-end="755">
+<p data-start="699" data-end="755">小结：Shadowrocket不仅是翻墙工具，更是一个高级网络流量管理器，适合对科学上网有较高自定义需求的用户。</p>
+</blockquote>
+<hr data-start="757" data-end="760">
+<h2 data-start="762" data-end="782">二、自动续费：表面便利，背后有逻辑</h2>
+<h3 data-start="784" data-end="796">什么是自动续费？</h3>
+<p data-start="798" data-end="876">自动续费，顾名思义，是一种在订阅服务到期前，系统自动扣费并延长服务期限的机制。它的出现是为了<strong data-start="844" data-end="859">最大化用户体验的连贯性</strong>，避免因疏忽未续费导致的服务中断。</p>
+<p data-start="878" data-end="985">对于Shadowrocket用户而言，自动续费多数与“节点订阅”服务相关——你购买的并非Shadowrocket App本身，而是你所添加的“订阅服务”（即V2Ray、SSR或Trojan节点服务）的自动续费机制。</p>
+<h3 data-start="987" data-end="1010">Shadowrocket本身是否收费？</h3>
+<p data-start="1012" data-end="1095">Shadowrocket 是一次性付费应用（目前约3美元），不具备自己的月付订阅制。但<strong data-start="1055" data-end="1076">它支持通过第三方提供商导入订阅链接</strong>，而这些节点服务往往采用自动续费模式。</p>
+<p data-start="1097" data-end="1150">因此，<strong data-start="1100" data-end="1150">本文所说的“自动续费”实际是针对节点服务或订阅服务而言的，而非Shadowrocket本体。</strong></p>
+<hr data-start="1152" data-end="1155">
+<h2 data-start="1157" data-end="1175">三、自动续费功能的具体设置方法</h2>
+<p data-start="1177" data-end="1193">下面我们以典型的使用流程来说明：</p>
+<h3 data-start="1195" data-end="1219">Step 1：购买支持自动续费的节点服务</h3>
+<p data-start="1221" data-end="1257">你需要先从某个提供商（俗称“机场”）购买带有自动续费选项的服务包。例如：</p>
+<ul data-start="1259" data-end="1307">
+<li data-start="1259" data-end="1281">
+<p data-start="1261" data-end="1281">按月套餐 ¥9.9/月，默认开启自动续费</p>
+</li>
+<li data-start="1282" data-end="1307">
+<p data-start="1284" data-end="1307">支持支付宝、微信、银行卡或PayPal定期扣款</p>
+</li>
+</ul>
+<h3 data-start="1309" data-end="1341">Step 2：复制订阅链接并导入Shadowrocket</h3>
+<ol data-start="1343" data-end="1428">
+<li data-start="1343" data-end="1362">
+<p data-start="1346" data-end="1362">打开Shadowrocket应用</p>
+</li>
+<li data-start="1363" data-end="1378">
+<p data-start="1366" data-end="1378">点击主界面左上角“配置”</p>
+</li>
+<li data-start="1379" data-end="1397">
+<p data-start="1382" data-end="1397">点击“订阅” → “添加订阅”</p>
+</li>
+<li data-start="1398" data-end="1413">
+<p data-start="1401" data-end="1413">粘贴服务商提供的订阅链接</p>
+</li>
+<li data-start="1414" data-end="1428">
+<p data-start="1417" data-end="1428">更新订阅，即可同步节点</p>
+</li>
+</ol>
+<h3 data-start="1430" data-end="1449">Step 3：开启自动续费功能</h3>
+<p data-start="1451" data-end="1484">部分服务商提供管理面板，可在其中启用/关闭自动续费。常见方式如下：</p>
+<ul data-start="1486" data-end="1575">
+<li data-start="1486" data-end="1520">
+<p data-start="1488" data-end="1520"><strong data-start="1488" data-end="1502">支付宝/微信自动扣费</strong>：跳转支付授权页，点击“同意并开通”</p>
+</li>
+<li data-start="1521" data-end="1554">
+<p data-start="1523" data-end="1554"><strong data-start="1523" data-end="1537">PayPal订阅扣费</strong>：登录PayPal账户授权自动付款</p>
+</li>
+<li data-start="1555" data-end="1575">
+<p data-start="1557" data-end="1575"><strong data-start="1557" data-end="1564">银行卡</strong>：绑定后自动周期性扣款</p>
+</li>
+</ul>
+<p data-start="1577" data-end="1616">Shadowrocket 本身不管理这个功能，而是由节点服务平台负责执行续费。</p>
+<hr data-start="1618" data-end="1621">
+<h2 data-start="1623" data-end="1637">四、自动续费的优劣分析</h2>
+<h3 data-start="1639" data-end="1652">优势一：服务不中断</h3>
+<ul data-start="1654" data-end="1732">
+<li data-start="1654" data-end="1685">
+<p data-start="1656" data-end="1685">VPN节点服务到期后若未及时续费，所有配置会变为“不可用”</p>
+</li>
+<li data-start="1686" data-end="1732">
+<p data-start="1688" data-end="1732">自动续费确保你始终能连接互联网自由世界，尤其是关键时刻（考试、会议、海外账号登录）不掉线</p>
+</li>
+</ul>
+<h3 data-start="1734" data-end="1749">优势二：价格可能更优惠</h3>
+<ul data-start="1751" data-end="1803">
+<li data-start="1751" data-end="1777">
+<p data-start="1753" data-end="1777">部分机场平台为鼓励用户开启自动续费，推出专属折扣</p>
+</li>
+<li data-start="1778" data-end="1803">
+<p data-start="1780" data-end="1803">比如：月付9.9元 → 自动续费后每月8.8元</p>
+</li>
+</ul>
+<h3 data-start="1805" data-end="1819">优势三：减少管理负担</h3>
+<ul data-start="1821" data-end="1854">
+<li data-start="1821" data-end="1834">
+<p data-start="1823" data-end="1834">避免频繁手动购买、续期</p>
+</li>
+<li data-start="1835" data-end="1854">
+<p data-start="1837" data-end="1854">支持多种支付方式绑定，后台自动完成</p>
+</li>
+</ul>
+<hr data-start="1856" data-end="1859">
+<h2 data-start="1861" data-end="1876">五、隐藏的风险与注意事项</h2>
+<p data-start="1878" data-end="1914">自动续费虽好，但也非“无脑开启”的万能解。其背后仍藏着一些需要警惕的点：</p>
+<h3 data-start="1916" data-end="1933">1. 节点失效服务依旧扣费</h3>
+<p data-start="1935" data-end="1995">部分不良服务商即使节点全部失效，也照样持续扣款，用户却难以及时发现。建议设置到期前邮件或App通知提醒，避免付费冤枉钱。</p>
+<h3 data-start="1997" data-end="2016">2. 未授权设备也可能继续使用</h3>
+<p data-start="2018" data-end="2053">如果服务商未设置设备绑定限制，可能会导致账号共享被滥用，续费开销增加。</p>
+<h3 data-start="2055" data-end="2073">3. 忘记关闭，产生多余支出</h3>
+<p data-start="2075" data-end="2110">很多用户在“机场”已不用，却忘记取消自动续费，长时间被动扣款而不自知。</p>
+<hr data-start="2112" data-end="2115">
+<h2 data-start="2117" data-end="2138">六、如何取消自动续费？实操方法如下：</h2>
+<p data-start="2140" data-end="2186">取消自动续费的操作，不在Shadowrocket中进行，而是到你所购买的节点服务网站中操作：</p>
+<h4 data-start="2188" data-end="2203">方法一：支付宝/微信</h4>
+<ol data-start="2205" data-end="2256">
+<li data-start="2205" data-end="2232">
+<p data-start="2208" data-end="2232">打开“支付设置” → “自动扣费”或“免密支付”</p>
+</li>
+<li data-start="2233" data-end="2256">
+<p data-start="2236" data-end="2256">找到VPN或机场服务商条目，点击取消授权</p>
+</li>
+</ol>
+<h4 data-start="2258" data-end="2273">方法二：PayPal</h4>
+<ol data-start="2275" data-end="2324">
+<li data-start="2275" data-end="2306">
+<p data-start="2278" data-end="2306">登录PayPal → 设置 → 付款 → 管理预核准付款</p>
+</li>
+<li data-start="2307" data-end="2324">
+<p data-start="2310" data-end="2324">找到服务商，点击“取消协议”</p>
+</li>
+</ol>
+<h4 data-start="2326" data-end="2341">方法三：节点管理后台</h4>
+<ol data-start="2343" data-end="2402">
+<li data-start="2343" data-end="2353">
+<p data-start="2346" data-end="2353">登录服务商官网</p>
+</li>
+<li data-start="2354" data-end="2372">
+<p data-start="2357" data-end="2372">进入“个人中心”或“我的服务”</p>
+</li>
+<li data-start="2373" data-end="2402">
+<p data-start="2376" data-end="2402">找到订阅套餐，点击“取消自动续费”或“关闭续费协议”</p>
+</li>
+</ol>
+<hr data-start="2404" data-end="2407">
+<h2 data-start="2409" data-end="2425">七、常见问题解答（FAQ）</h2>
+<h3 data-start="2427" data-end="2456">Q1：Shadowrocket为什么没有内置付款？</h3>
+<p data-start="2458" data-end="2528">因为App Store政策限制，VPN类App不允许直接在应用内支付订阅服务。Shadowrocket也因此选择将节点服务外包给第三方平台。</p>
+<h3 data-start="2530" data-end="2552">Q2：如何判断我是否开启了自动续费？</h3>
+<p data-start="2554" data-end="2592">登录你购买节点的服务商网站 → 用户中心 → 查看是否“自动续费已启用”字样</p>
+<h3 data-start="2594" data-end="2626">Q3：我可以在Shadowrocket中关闭自动续费吗？</h3>
+<p data-start="2628" data-end="2676">不能。你需要前往对应节点平台后台关闭。Shadowrocket本身仅作为“载体”，并不管理财务。</p>
+<h3 data-start="2678" data-end="2707">Q4：我切换了服务商，原来的自动续费会自动终止吗？</h3>
+<p data-start="2709" data-end="2744">不会。你必须<strong data-start="2715" data-end="2723">手动取消</strong>旧平台上的自动扣费授权，否则仍会继续扣款。</p>
+<hr data-start="2746" data-end="2749">
+<h2 data-start="2751" data-end="2772">八、写在最后：自动续费是福也是“祸”</h2>
+<p data-start="2774" data-end="2859">在体验为王的互联网产品中，自动续费是最“润物细无声”的设计之一。它的初衷是提升用户体验，保障服务稳定连续，<strong data-start="2827" data-end="2859">却也可能在不经意间让我们陷入财务疏忽或被动消费的陷阱中。</strong></p>
+<p data-start="2861" data-end="2943">如果你是高频使用VPN的人，开启自动续费无疑是聪明的选择；但若你使用周期不固定、服务商更换频繁，建议使用“手动续费+到期提醒”的方式，确保每一笔支出都在你掌控之中。</p>
+<hr data-start="2945" data-end="2948">
+<h2 data-start="2950" data-end="2958">精彩点评：</h2>
+<blockquote data-start="2960" data-end="3094">
+<p data-start="2962" data-end="3094">“自动续费是一把双刃剑。它可以让服务悄无声息地延续，也可能让你在不知不觉中流失资金。在Shadowrocket这类高频率使用的VPN工具中，自动续费更是一项‘战略配置’：用得好，服务不中断；用不好，钱包先喊疼。智能用户，从来不是看谁花钱多，而是看谁掌控得住细节。”</p>
+</blockquote>
+<p data-start="3096" data-end="3170" data-is-last-node="" data-is-only-node="">希望本文能为每一位正在使用或准备使用Shadowrocket的用户，提供最真实、最贴地气的使用参考与操作指南。科学上网不难，难的是在细节中做得优雅。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-114958.htm">深入解析v2ray橘子云：安装、配置与使用全攻略</a></p>
+                                        <p>下一个：<a href="/news/article-115575.htm">掌控你的网络命脉：Quantumult神机规则使用全指南</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-112516.htm" title="全面解析Shadowrocket连接方式：详细设置与问题解决">全面解析Shadowrocket连接方式：详细设置与问题解决</a></li>
+                        <li class="py-2"><a href="/news/article-113158.htm" title="Shadowrocket无法使用？一文彻底解决iOS代理连接失败的所有疑难杂症">Shadowrocket无法使用？一文彻底解决iOS代理连接失败的所有疑难杂症</a></li>
+                        <li class="py-2"><a href="/news/article-115882.htm" title="Clash 32位安卓深度指南：安装、配置与使用全流程详解">Clash 32位安卓深度指南：安装、配置与使用全流程详解</a></li>
+                        <li class="py-2"><a href="/news/article-114330.htm" title="Clash中如何导入URL配置的完整指南：轻松实现高效翻墙">Clash中如何导入URL配置的完整指南：轻松实现高效翻墙</a></li>
+                        <li class="py-2"><a href="/news/article-111007.htm" title="2019年iOS设备科学上网免费访问指南：畅游全球网络的解决方案">2019年iOS设备科学上网免费访问指南：畅游全球网络的解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-111006.htm" title="菠菜园V2Ray使用教程与配置：安全上网的完美解决方案">菠菜园V2Ray使用教程与配置：安全上网的完美解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-114060.htm" title="深度解析Vmess协议的隐私保护与安全性">深度解析Vmess协议的隐私保护与安全性</a></li>
+                        <li class="py-2"><a href="/news/article-115575.htm" title="掌控你的网络命脉：Quantumult神机规则使用全指南">掌控你的网络命脉：Quantumult神机规则使用全指南</a></li>
+                        <li class="py-2"><a href="/news/article-115279.htm" title="探秘Shadowrocket自动续费机制：一键续期背后的逻辑与风险">探秘Shadowrocket自动续费机制：一键续期背后的逻辑与风险</a></li>
+                        <li class="py-2"><a href="/news/article-116187.htm" title="手机变身万能代理器：Clash 热点共享上网的终极实战指南">手机变身万能代理器：Clash 热点共享上网的终极实战指南</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Us Section -->
+    </main><!-- End #main -->
+        <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                <a href="/">Clash for Mac 订阅教程网</a> 版权所有 Powered by WordPress
+            </div>
+            <div class="credits"></div>
+        </div>
+    </footer><!-- End Footer -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="/assets/website/js/frontend/v2rayc/jquery-2.1.0.min.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/aos/aos.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/php-email-form/validate.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/waypoints/noframework.waypoints.js"></script>
+    <!-- Template Main JS File -->
+    <script src="/assets/website/js/frontend/v2rayc/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+
+</body>
+
+</html>

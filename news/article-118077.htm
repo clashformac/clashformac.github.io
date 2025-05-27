@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://clashformac.github.io/news/article-118077.htm" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>深度解读毛子固件与V2Ray：安装、配置与实战指南</title>
+        <meta name="description" content="随着互联网的不断演进，网络安全和隐私保护成为了每位用户关注的焦点。特别是在需要科学上网的环境下，选择一款稳定、安全且高效的网络工具显得尤为重要。毛子固件作为一种基于OpenWrt的定制路由器固件，结合" />
+        <link rel="icon" href="/assets/website/img/v2rayc/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="Clash for Mac 订阅教程网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://clashformac.github.io/news/article-118077.htm" />
+    <meta property="og:site_name" content="Clash for Mac 订阅教程网" />
+    <meta property="og:title" content="深度解读毛子固件与V2Ray：安装、配置与实战指南" />
+    <meta property="og:image" content="https://clashformac.github.io/uploads/20241122/f384775d9ebdbc1dcee3260df1f602b0.webp" />
+        <meta property="og:release_date" content="2025-05-24T09:41:43" />
+    <meta property="og:updated_time" content="2025-05-24T09:41:43" />
+        <meta property="og:description" content="随着互联网的不断演进，网络安全和隐私保护成为了每位用户关注的焦点。特别是在需要科学上网的环境下，选择一款稳定、安全且高效的网络工具显得尤为重要。毛子固件作为一种基于OpenWrt的定制路由器固件，结合" />
+    
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深度解读毛子固件与V2Ray：安装、配置与实战指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="/assets/website/js/frontend/v2rayc/aos/aos.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/website/js/frontend/v2rayc/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="/assets/website/css/v2rayc/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C9TKXBNNCJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C9TKXBNNCJ');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages">
+        <div class="container d-flex align-items-center">
+            <a href="/">
+                            <span class="logo me-auto">Clash for Mac</span>
+                        </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                                        <li><a class="nav-link" href="/">首页</a></li>
+                                        <li><a class="nav-link" href="/paid-subscribe/">推荐机场</a></li>
+                                        <li><a class="nav-link" href="/news/">新闻资讯</a></li>
+                                        <li><a class="nav-link" href="/client.htm">客户端</a></li>
+                                    </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/news/">新闻资讯</a></li>
+                    <li>正文</li>
+                </ol>
+                <h1>深度解读毛子固件与V2Ray：安装、配置与实战指南</h1>
+            </div>
+        </section><!-- End Breadcrumbs -->
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="29" data-end="212">随着互联网的不断演进，网络安全和隐私保护成为了每位用户关注的焦点。特别是在需要科学上网的环境下，选择一款稳定、安全且高效的网络工具显得尤为重要。毛子固件作为一种基于OpenWrt的定制路由器固件，结合了功能强大的V2Ray代理技术，为用户提供了可靠的解决方案。本文将从基础概念讲起，深入介绍毛子固件与V2Ray的安装、配置及使用技巧，助你轻松构建安全自由的网络环境。</p>
+<hr data-start="214" data-end="217">
+<h2 data-start="219" data-end="236">一、什么是毛子固件及其优势？</h2>
+<p data-start="238" data-end="363">毛子固件是一款基于开源OpenWrt系统深度定制的路由器固件。它集成了大量实用的网络功能和插件，旨在提升路由器的网络性能、扩展功能性并保障用户隐私安全。毛子固件最大的亮点之一是其对科学上网工具的无缝支持，尤其是集成了V2Ray这一高性能网络代理工具。</p>
+<h3 data-start="365" data-end="379">毛子固件的核心优势：</h3>
+<ul data-start="381" data-end="604">
+<li data-start="381" data-end="432">
+<p data-start="383" data-end="432"><strong data-start="383" data-end="391">灵活性强</strong><br data-start="391" data-end="394">
+由于基于OpenWrt，毛子固件可以高度定制，满足不同用户的多样化需求。</p>
+</li>
+<li data-start="434" data-end="498">
+<p data-start="436" data-end="498"><strong data-start="436" data-end="447">集成多协议支持</strong><br data-start="447" data-end="450">
+支持V2Ray、Shadowsocks、Trojan等多种代理协议，适应复杂多变的网络环境。</p>
+</li>
+<li data-start="500" data-end="554">
+<p data-start="502" data-end="554"><strong data-start="502" data-end="513">稳定性和安全性</strong><br data-start="513" data-end="516">
+提供路由器级别的安全防护，支持多种加密协议，有效防止网络监听和数据泄露。</p>
+</li>
+<li data-start="556" data-end="604">
+<p data-start="558" data-end="604"><strong data-start="558" data-end="568">用户友好界面</strong><br data-start="568" data-end="571">
+结合简洁的Web管理界面和命令行工具，适合不同层次的用户操作。</p>
+</li>
+</ul>
+<hr data-start="606" data-end="609">
+<h2 data-start="611" data-end="636">二、深入了解V2Ray——毛子固件的核心组件</h2>
+<p data-start="638" data-end="722">V2Ray是一个强大的网络代理工具，设计之初就是为应对网络封锁和监控，确保数据隐私和网络自由。它支持多种传输协议和加密方式，灵活的路由机制使其能够根据规则智能分流流量。</p>
+<h3 data-start="724" data-end="739">V2Ray的主要特点：</h3>
+<ul data-start="741" data-end="977">
+<li data-start="741" data-end="809">
+<p data-start="743" data-end="809"><strong data-start="743" data-end="752">多协议支持</strong><br data-start="752" data-end="755">
+支持VMess（其专有协议）、Shadowsocks、Socks、HTTP等协议，能适应不同的网络需求。</p>
+</li>
+<li data-start="811" data-end="863">
+<p data-start="813" data-end="863"><strong data-start="813" data-end="824">丰富的路由功能</strong><br data-start="824" data-end="827">
+用户可以根据IP、域名、端口等条件灵活设定流量走向，实现精细化管理。</p>
+</li>
+<li data-start="865" data-end="926">
+<p data-start="867" data-end="926"><strong data-start="867" data-end="878">强大的加密保障</strong><br data-start="878" data-end="881">
+采用多种加密算法（如AES-128-GCM、ChaCha20等）保障数据传输的安全性。</p>
+</li>
+<li data-start="928" data-end="977">
+<p data-start="930" data-end="977"><strong data-start="930" data-end="940">插件和拓展性</strong><br data-start="940" data-end="943">
+支持通过插件实现流量混淆、防检测等功能，有效对抗封锁和流量审查。</p>
+</li>
+</ul>
+<hr data-start="979" data-end="982">
+<h2 data-start="984" data-end="1005">三、毛子固件 v2ray 安装全流程</h2>
+<h3 data-start="1007" data-end="1018">1. 准备工作</h3>
+<ul data-start="1020" data-end="1228">
+<li data-start="1020" data-end="1082">
+<p data-start="1022" data-end="1082"><strong data-start="1022" data-end="1040">确认路由器支持OpenWrt</strong><br data-start="1040" data-end="1043">
+访问OpenWrt官网或毛子固件社区，确认你的路由器型号支持刷入毛子固件。</p>
+</li>
+<li data-start="1084" data-end="1147">
+<p data-start="1086" data-end="1147"><strong data-start="1086" data-end="1096">下载固件文件</strong><br data-start="1096" data-end="1099">
+从毛子固件官网或官方社区获取对应型号的固件文件。请务必选择适配型号和最新版本，避免刷机失败。</p>
+</li>
+<li data-start="1149" data-end="1186">
+<p data-start="1151" data-end="1186"><strong data-start="1151" data-end="1161">备份现有配置</strong><br data-start="1161" data-end="1164">
+为防万一，建议先备份原路由器的配置文件。</p>
+</li>
+<li data-start="1188" data-end="1228">
+<p data-start="1190" data-end="1228"><strong data-start="1190" data-end="1201">准备电脑与网络</strong><br data-start="1201" data-end="1204">
+连接到路由器，确保网络稳定，方便刷机和配置。</p>
+</li>
+</ul>
+<h3 data-start="1230" data-end="1243">2. 刷入毛子固件</h3>
+<ul data-start="1245" data-end="1344">
+<li data-start="1245" data-end="1268">
+<p data-start="1247" data-end="1268">登录路由器管理后台，找到固件升级选项。</p>
+</li>
+<li data-start="1269" data-end="1291">
+<p data-start="1271" data-end="1291">上传毛子固件镜像文件，确认升级操作。</p>
+</li>
+<li data-start="1292" data-end="1321">
+<p data-start="1294" data-end="1321">升级过程中切勿断电或关闭设备，等待路由器自动重启。</p>
+</li>
+<li data-start="1322" data-end="1344">
+<p data-start="1324" data-end="1344">重启完成后，访问默认IP登录新固件界面。</p>
+</li>
+</ul>
+<h3 data-start="1346" data-end="1357">3. 初始配置</h3>
+<ul data-start="1359" data-end="1441">
+<li data-start="1359" data-end="1392">
+<p data-start="1361" data-end="1392">设置路由器的基本网络参数（WAN口连接方式、无线配置等）。</p>
+</li>
+<li data-start="1393" data-end="1415">
+<p data-start="1395" data-end="1415">建议更改管理员密码，提高设备安全性。</p>
+</li>
+<li data-start="1416" data-end="1441">
+<p data-start="1418" data-end="1441">更新路由器固件到最新版本，确保功能完善与安全。</p>
+</li>
+</ul>
+<hr data-start="1443" data-end="1446">
+<h2 data-start="1448" data-end="1469">四、V2Ray在毛子固件中的配置指南</h2>
+<h3 data-start="1471" data-end="1489">1. 访问V2Ray配置界面</h3>
+<ul data-start="1491" data-end="1536">
+<li data-start="1491" data-end="1506">
+<p data-start="1493" data-end="1506">登录毛子固件管理后台。</p>
+</li>
+<li data-start="1507" data-end="1536">
+<p data-start="1509" data-end="1536">进入“服务”或“插件”管理区，找到V2Ray配置插件。</p>
+</li>
+</ul>
+<h3 data-start="1538" data-end="1551">2. 输入基础信息</h3>
+<ul data-start="1553" data-end="1667">
+<li data-start="1553" data-end="1586">
+<p data-start="1555" data-end="1586"><strong data-start="1555" data-end="1564">服务器地址</strong><br data-start="1564" data-end="1567">
+输入V2Ray服务端的IP或域名。</p>
+</li>
+<li data-start="1588" data-end="1624">
+<p data-start="1590" data-end="1624"><strong data-start="1590" data-end="1597">端口号</strong><br data-start="1597" data-end="1600">
+通常为服务端开放的端口，需与服务端保持一致。</p>
+</li>
+<li data-start="1626" data-end="1667">
+<p data-start="1628" data-end="1667"><strong data-start="1628" data-end="1642">用户ID（UUID）</strong><br data-start="1642" data-end="1645">
+V2Ray专用唯一标识符，确保通信安全。</p>
+</li>
+</ul>
+<h3 data-start="1669" data-end="1680">3. 进阶设置</h3>
+<ul data-start="1682" data-end="1842">
+<li data-start="1682" data-end="1745">
+<p data-start="1684" data-end="1745"><strong data-start="1684" data-end="1692">路由规则</strong><br data-start="1692" data-end="1695">
+配置哪些流量走代理，哪些流量直连。例如，可以将国内网站设置为直连，国外流量走代理，实现优化体验。</p>
+</li>
+<li data-start="1747" data-end="1781">
+<p data-start="1749" data-end="1781"><strong data-start="1749" data-end="1757">加密方式</strong><br data-start="1757" data-end="1760">
+根据服务器支持情况选择合适的加密算法。</p>
+</li>
+<li data-start="1783" data-end="1842">
+<p data-start="1785" data-end="1842"><strong data-start="1785" data-end="1796">传输协议与伪装</strong><br data-start="1796" data-end="1799">
+支持WebSocket、HTTP/2等多种传输协议，可开启伪装功能防止流量被识别。</p>
+</li>
+</ul>
+<h3 data-start="1844" data-end="1858">4. 保存并应用配置</h3>
+<ul data-start="1860" data-end="1902">
+<li data-start="1860" data-end="1880">
+<p data-start="1862" data-end="1880">保存设置后，重启V2Ray服务。</p>
+</li>
+<li data-start="1881" data-end="1902">
+<p data-start="1883" data-end="1902">确认日志无报错，检查连接状态是否正常。</p>
+</li>
+</ul>
+<hr data-start="1904" data-end="1907">
+<h2 data-start="1909" data-end="1923">五、实用技巧与注意事项</h2>
+<ul data-start="1925" data-end="2166">
+<li data-start="1925" data-end="1981">
+<p data-start="1927" data-end="1981"><strong data-start="1927" data-end="1940">保持固件与插件更新</strong><br data-start="1940" data-end="1943">
+路由器固件和V2Ray插件经常更新，以修复漏洞和增强功能，务必及时升级。</p>
+</li>
+<li data-start="1983" data-end="2030">
+<p data-start="1985" data-end="2030"><strong data-start="1985" data-end="2002">使用可靠的V2Ray服务器</strong><br data-start="2002" data-end="2005">
+选择稳定、安全、速度快的服务器，确保流畅体验。</p>
+</li>
+<li data-start="2032" data-end="2078">
+<p data-start="2034" data-end="2078"><strong data-start="2034" data-end="2046">合理设置路由规则</strong><br data-start="2046" data-end="2049">
+精细路由能显著提升访问速度，减少不必要的代理流量负担。</p>
+</li>
+<li data-start="2080" data-end="2117">
+<p data-start="2082" data-end="2117"><strong data-start="2082" data-end="2090">备份配置</strong><br data-start="2090" data-end="2093">
+养成定期备份路由器配置的习惯，方便快速恢复。</p>
+</li>
+<li data-start="2119" data-end="2166">
+<p data-start="2121" data-end="2166"><strong data-start="2121" data-end="2129">安全第一</strong><br data-start="2129" data-end="2132">
+避免将路由器开放给不可信网络，保护管理界面密码，防止被黑客攻击。</p>
+</li>
+</ul>
+<hr data-start="2168" data-end="2171">
+<h2 data-start="2173" data-end="2189">六、常见问题解答（FAQ）</h2>
+<p data-start="2191" data-end="2263"><strong data-start="2191" data-end="2214">Q1：毛子固件 v2ray 是否安全？</strong><br data-start="2214" data-end="2217">
+只要正确配置并使用正规服务器，毛子固件结合V2Ray提供了强大的加密和隐私保护，安全性较高。</p>
+<p data-start="2265" data-end="2323"><strong data-start="2265" data-end="2280">Q2：连接失败怎么办？</strong><br data-start="2280" data-end="2283">
+请核对服务器地址、端口和UUID是否正确，检查网络连接，必要时更换服务器或端口。</p>
+<p data-start="2325" data-end="2389"><strong data-start="2325" data-end="2351">Q3：使用毛子固件 v2ray 速度怎么样？</strong><br data-start="2351" data-end="2354">
+速度受多重因素影响，包括服务器带宽、节点距离、网络环境和路由规则优化。</p>
+<p data-start="2391" data-end="2444"><strong data-start="2391" data-end="2407">Q4：如何更新毛子固件？</strong><br data-start="2407" data-end="2410">
+访问官方网站下载最新固件，按刷机步骤更新即可。更新前请备份当前配置。</p>
+<hr data-start="2446" data-end="2449">
+<h2 data-start="2451" data-end="2458">七、总结</h2>
+<p data-start="2460" data-end="2615">毛子固件结合V2Ray构筑了一个强大且灵活的科学上网平台，既保障了网络安全与隐私，又为用户提供了极大的自由度和便捷性。通过本文详尽的介绍，从概念到安装、配置，再到实际使用和问题解决，用户可以全面掌握这一强大工具的使用技巧。无论是家庭用户还是技术爱好者，都能借助毛子固件与V2Ray，打造专属的高效安全网络环境。</p>
+<hr data-start="2617" data-end="2620">
+<h3 data-start="2622" data-end="2632">语言精彩点评</h3>
+<p data-start="2634" data-end="2856" data-is-last-node="" data-is-only-node="">本文条理清晰，逻辑严谨，内容涵盖全面，既有理论层面的深入剖析，又包含实际操作的具体步骤，极具实用价值。语言表达简洁明了，避免了过于专业的晦涩术语，提升了阅读的友好性和接受度。文章不仅关注技术细节，更兼顾用户体验，兼具指导性与普及性，堪称网络技术类博客的优质范本。段落层次分明，重点突出，FAQ部分针对用户疑问给予精准解答，极大增强了文章的针对性和实用性。整体文字风格专业且亲切，让复杂技术通俗易懂，充分体现了作者扎实的专业功底与良好的写作素养。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-117764.htm">全面解析：用Clash精准测量网络延迟，打造顺畅上网体验的关键步骤</a></p>
+                                        <p>下一个：<a href="/news/article-118388.htm">科学上网全攻略：常见问题与实用解决方案详解</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-111006.htm" title="菠菜园V2Ray使用教程与配置：安全上网的完美解决方案">菠菜园V2Ray使用教程与配置：安全上网的完美解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-116825.htm" title="全面指南：如何在谷歌浏览器中高效挂载V2Ray实现安全隐私上网">全面指南：如何在谷歌浏览器中高效挂载V2Ray实现安全隐私上网</a></li>
+                        <li class="py-2"><a href="/news/article-112516.htm" title="全面解析Shadowrocket连接方式：详细设置与问题解决">全面解析Shadowrocket连接方式：详细设置与问题解决</a></li>
+                        <li class="py-2"><a href="/news/article-116187.htm" title="手机变身万能代理器：Clash 热点共享上网的终极实战指南">手机变身万能代理器：Clash 热点共享上网的终极实战指南</a></li>
+                        <li class="py-2"><a href="/news/article-113461.htm" title="两小时深度体验《Clash》：策略、卡组与实战优化全指南">两小时深度体验《Clash》：策略、卡组与实战优化全指南</a></li>
+                        <li class="py-2"><a href="/news/article-113158.htm" title="Shadowrocket无法使用？一文彻底解决iOS代理连接失败的所有疑难杂症">Shadowrocket无法使用？一文彻底解决iOS代理连接失败的所有疑难杂症</a></li>
+                        <li class="py-2"><a href="/news/article-115279.htm" title="探秘Shadowrocket自动续费机制：一键续期背后的逻辑与风险">探秘Shadowrocket自动续费机制：一键续期背后的逻辑与风险</a></li>
+                        <li class="py-2"><a href="/news/article-114060.htm" title="深度解析Vmess协议的隐私保护与安全性">深度解析Vmess协议的隐私保护与安全性</a></li>
+                        <li class="py-2"><a href="/news/article-114330.htm" title="Clash中如何导入URL配置的完整指南：轻松实现高效翻墙">Clash中如何导入URL配置的完整指南：轻松实现高效翻墙</a></li>
+                        <li class="py-2"><a href="/news/article-115882.htm" title="Clash 32位安卓深度指南：安装、配置与使用全流程详解">Clash 32位安卓深度指南：安装、配置与使用全流程详解</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">28</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Us Section -->
+    </main><!-- End #main -->
+        <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                <a href="/">Clash for Mac 订阅教程网</a> 版权所有 Powered by WordPress
+            </div>
+            <div class="credits"></div>
+        </div>
+    </footer><!-- End Footer -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="/assets/website/js/frontend/v2rayc/jquery-2.1.0.min.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/aos/aos.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/php-email-form/validate.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/v2rayc/waypoints/noframework.waypoints.js"></script>
+    <!-- Template Main JS File -->
+    <script src="/assets/website/js/frontend/v2rayc/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+
+</body>
+
+</html>

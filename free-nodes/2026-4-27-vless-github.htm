@@ -298,6 +298,16 @@ sudo systemctl </span><span><span class="hljs-built_in">enable</span></span><spa
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 能否兼容最新的 iOS 系统？</h5></div>
+    <div class="panel-body">
+        Potatso Lite 更新频率较低，在新版本 iOS 上可能出现兼容性问题。若遇到无法连接或闪退情况，建议升级至其他活跃维护的客户端如 Shadowrocket 或 Quantumult X。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的混淆参数如何选择才能兼顾速度与隐蔽性？</h5></div>
+    <div class="panel-body">
+        混淆参数建议根据网络环境选择，一般 http_simple 兼容性最好，tls1.2_ticket_auth 隐蔽性更强。若节点在国内访问，选择简单混淆可提升速度，若跨境访问频繁则推荐 TLS 混淆提高安全性。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Mihomo 启动后 CPU 占用高，有哪些优化建议？</h5></div>
     <div class="panel-body">
         检查是否启用了大量日志或复杂脚本，关闭不必要的规则提供者与日志调试；在多核服务器上启用并发或调整线程数；更新到最新版本以获得性能优化，并监控是否有异常连接导致处理压力。<hr />    </div>
@@ -313,19 +323,9 @@ sudo systemctl </span><span><span class="hljs-built_in">enable</span></span><spa
         Reality 是 V2Ray 新增的伪装技术，可替代传统 TLS。它无需真实证书，通过公钥验证机制实现端到端加密。相比 Trojan 的 HTTPS 伪装方式，Reality 更轻量、安全且配置更简洁。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 的重写脚本可以实现哪些功能？</h5></div>
+    <div class="panel-heading"><h5>为什么某些网站在通过代理后登录会频繁要求二次验证？</h5></div>
     <div class="panel-body">
-        QuantumultX 支持 JavaScript 重写脚本，可修改请求头、响应内容、跳转 URL、广告屏蔽和定制化流量处理。结合策略组可实现个性化网络访问和优化，提高用户体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆方式选择有什么讲究？</h5></div>
-    <div class="panel-body">
-        混淆方式决定流量伪装特性，不同方式适应不同封锁环境。常用方式如 tls1.2_ticket_auth 模拟 HTTPS，http_simple 模拟 HTTP 请求，根据环境选择可提高抗封锁能力。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 能否兼容最新的 iOS 系统？</h5></div>
-    <div class="panel-body">
-        Potatso Lite 更新频率较低，在新版本 iOS 上可能出现兼容性问题。若遇到无法连接或闪退情况，建议升级至其他活跃维护的客户端如 Shadowrocket 或 Quantumult X。<hr />    </div>
+        代理会改变访问 IP 与地理位置，目标站点可能检测到异常登录并触发验证码或二次验证。建议对常用账户使用白名单 IP 或在代理配置中对特定站点设置直连来避免频繁验证。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 如何实现节点自动切换？</h5></div>
@@ -333,14 +333,14 @@ sudo systemctl </span><span><span class="hljs-built_in">enable</span></span><spa
         Shadowrocket 可结合延迟测速和策略组自动选择低延迟、稳定节点处理不同流量。提高网页、视频和游戏访问速度，减少掉线和卡顿，优化整体上网体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>为什么某些网站在通过代理后登录会频繁要求二次验证？</h5></div>
+    <div class="panel-heading"><h5>SSR 的混淆方式选择有什么讲究？</h5></div>
     <div class="panel-body">
-        代理会改变访问 IP 与地理位置，目标站点可能检测到异常登录并触发验证码或二次验证。建议对常用账户使用白名单 IP 或在代理配置中对特定站点设置直连来避免频繁验证。<hr />    </div>
+        混淆方式决定流量伪装特性，不同方式适应不同封锁环境。常用方式如 tls1.2_ticket_auth 模拟 HTTPS，http_simple 模拟 HTTP 请求，根据环境选择可提高抗封锁能力。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆参数如何选择才能兼顾速度与隐蔽性？</h5></div>
+    <div class="panel-heading"><h5>QuantumultX 的重写脚本可以实现哪些功能？</h5></div>
     <div class="panel-body">
-        混淆参数建议根据网络环境选择，一般 http_simple 兼容性最好，tls1.2_ticket_auth 隐蔽性更强。若节点在国内访问，选择简单混淆可提升速度，若跨境访问频繁则推荐 TLS 混淆提高安全性。<hr />    </div>
+        QuantumultX 支持 JavaScript 重写脚本，可修改请求头、响应内容、跳转 URL、广告屏蔽和定制化流量处理。结合策略组可实现个性化网络访问和优化，提高用户体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 能运行在哪些设备上？</h5></div>
@@ -374,16 +374,16 @@ sudo systemctl </span><span><span class="hljs-built_in">enable</span></span><spa
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-3-27-free-vless-node.htm" title="Clash for Mac - 3月27日21.2M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点分享">Clash for Mac - 3月27日21.2M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-3-free-node-subscribe.htm" title="Clash for Mac - 5月3日21.2M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点分享">Clash for Mac - 5月3日21.2M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-30-vless-windows.htm" title="Clash for Mac - 4月30日21.1M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点订阅节点分享">Clash for Mac - 4月30日21.1M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-10-free-node-subscribe.htm" title="Clash for Mac - 4月10日22M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享">Clash for Mac - 4月10日22M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-19-vless-github.htm" title="Clash for Mac - 4月19日20.1M/S|免费Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点分享">Clash for Mac - 4月19日20.1M/S|免费Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-6-node-share-links.htm" title="Clash for Mac - 5月6日22M/S|免费Clash节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点订阅节点分享">Clash for Mac - 5月6日22M/S|免费Clash节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-29-vless-node-share.htm" title="Clash for Mac - 4月29日18.2M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Singbox节点订阅节点分享">Clash for Mac - 4月29日18.2M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-2-vless-node-github.htm" title="Clash for Mac - 5月2日18.2M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点/Trojan节点订阅节点分享">Clash for Mac - 5月2日18.2M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点/Trojan节点订阅节点分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-23-free-subscribe-node.htm" title="Clash for Mac - 4月23日21.5M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点分享">Clash for Mac - 4月23日21.5M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-21-free-node-subscribe-links.htm" title="Clash for Mac - 3月21日22.2M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点分享">Clash for Mac - 3月21日22.2M/S|免费Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-25-free-node-subscribe-links.htm" title="Clash for Mac - 4月25日22M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点订阅节点分享">Clash for Mac - 4月25日22M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-11-latest-vless-node.htm" title="Clash for Mac - 3月11日20.2M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点订阅节点分享">Clash for Mac - 3月11日20.2M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-13-vless-github.htm" title="Clash for Mac - 3月13日19.1M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点订阅节点分享">Clash for Mac - 3月13日19.1M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-20-vless-windows.htm" title="Clash for Mac - 4月20日18.1M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点/Trojan节点订阅节点分享">Clash for Mac - 4月20日18.1M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点/Trojan节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-23-vless-github.htm" title="Clash for Mac - 3月23日18.9M/S|免费Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点分享">Clash for Mac - 3月23日18.9M/S|免费Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-16-vless-node.htm" title="Clash for Mac - 4月16日19.1M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点订阅节点分享">Clash for Mac - 4月16日19.1M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/Clash节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-29-node-share.htm" title="Clash for Mac - 3月29日19.8M/S|免费V2ray节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点分享">Clash for Mac - 3月29日19.8M/S|免费V2ray节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-20-vless-windows.htm" title="Clash for Mac - 4月20日18.1M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点/Trojan节点订阅节点分享">Clash for Mac - 4月20日18.1M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点/Trojan节点订阅节点分享</a></li>
                     </ul>
     </div>
 </div>
@@ -395,10 +395,10 @@ sudo systemctl </span><span><span class="hljs-built_in">enable</span></span><spa
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
+                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                     </ul>
     </div>
